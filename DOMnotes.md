@@ -6,14 +6,16 @@ As long as there is a <div> we can access and queary it's contents.
 .querySelectorAll() is slower than .getElementsByTagName() the former takes a snapshot of what is in the document and created a NodeList not an array. The .getElementsByTagName() is faster in all browsers and is live i.e. it updates according to how the document it manipulated. 
 
 <h2> To create an array from a created NodeList </h2>
- ```js
+```js
  Array.from(myElements).forEach(doSomethingWithEachElement)
 // Or prior to ES6
 Array.prototype.forEach.call(myElements, doSomethingWithEachElement)
 // Shorthand:
 [].forEach.call(myElements, doSomethingWithEachElement)
-``` 
+```
+
 Read-only properties referencing the family - all are live.
+
 ```js
 myElement.children
 myElement.firstElementChild
@@ -22,6 +24,7 @@ myElement.previousElementSibling
 myElement.nextElementSibling
 ```
 As the Element interface inherits from the Node interface, the following properties are also available:
+
 ```js
 myElement.childNodes
 myElement.firstChild
@@ -31,7 +34,9 @@ myElement.nextSibling
 myElement.parentNode
 myElement.parentElement
 ``` 
+
 We can then check the type of a given node like e.g.
+
 ```js
 const myElement = document.querySelector('#foo div.bar')
 myElement.firstChild.nodeType === 3
@@ -39,12 +44,14 @@ myElement.firstChild.nodeType === 3
 //As with any object, we can check a node’s prototype chain using the instanceof operator:
 myElement.firstChild instanceof Text
 ```
+
 To modify classes of elements:
 ```js
 myElement.classList.add('foo')
 myElement.classList.remove('bar')
 myElement.classList.toggle('baz')
 ``` 
+
 To access and modofy element properties: 
 ```js
 // Get an attribute value
