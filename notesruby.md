@@ -1,12 +1,12 @@
 <h1> Notes for basic Ruby</h1>
 
 TL;RL:
-string = "string"
-hashes = {}
-arrays = [] <i>can contain many objects </i>
-symbols = !symbol
-integers = 123
-floats = 123.456
+- string = "string"
+- hashes = {}
+- arrays = [] <i>can contain many - objects </i>
+- symbols = !symbol
+- integers = 123
+- floats = 123.456
 
 <i>Try to always use single quotes '' cause it saves processing power, use doublequotes "" if there's a need like string interprolation or you wrap a string in somethingelse</i>
 
@@ -19,6 +19,7 @@ För att testa koden: ruby nameofprogram.rb
 Börja koda ruby genom att skriva irb i terminal.
 
 <h2>DATATYPES;</h2> to know what class something is, type the objectname.class
+
 - <b>String</b>= a class, object type, for letters/characters, anything inside “ “  or ‘ ‘ is a string. 
 - <b>Floats</b> =  numbers (and decimal numbers)
 - <b>Integer</b> = whole numbers (a Fixnum class)
@@ -31,7 +32,7 @@ Börja koda ruby genom att skriva irb i terminal.
 	my_array.laster
 	my_array[1]
 	my_array.push('horse')
-- To delete by it’s index use objectname.delete_at(indexnr exvis. 0)  
+	To delete by it’s index use objectname.delete_at(indexnr exvis. 0)  
 - <b>Hashes</b> are collection of key-value pairs. 
 	- To create: 
 	Person = {name: “pia”, age: 27, weight: 59.5} :name is the key and “pia” is the value. 
